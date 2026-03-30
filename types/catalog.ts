@@ -1,17 +1,17 @@
 export type CardSet = "A" | "B";
 
 export type Item = {
-    id: string;
-    slug: string;
-    title: string;
-    author: string;
-    category: string;
-    priceLoggedOut: number;
-    priceLoggedIn: number;
-    imageUrl: string;
-    cardSet: CardSet;
-    description: string;
-    attributes: Record<string, string>;
+  id: string;
+  slug: string;
+  title: string;
+  author: string;
+  category: string;
+  priceLoggedOut: number;
+  priceLoggedIn: number;
+  imageUrl: string;
+  cardSet: CardSet;
+  description: string;
+  attributes: Record<string, string>;
 }
 
 export type ProductAttribute = {
