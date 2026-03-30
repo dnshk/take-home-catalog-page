@@ -126,7 +126,7 @@ I also standardized attribute keys by convention and normalized them in the appl
 
 These choices kept the implementation focused while still meeting the core functional requirements.
 
-What I’d do next:
+**What I’d do next**:
 Move from imageUrl to native Contentful media assets for image metadata, editor-friendly asset management, and better long-term scalability
 Add stronger validation for attributes, either through explicit modeling or a more structured attribute system
 Add pagination for larger catalogs
