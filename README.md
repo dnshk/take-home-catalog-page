@@ -59,16 +59,16 @@ Content type: item
 
 *Fields*:
 
-title — short text
-slug — short text
-author — short text
-category — short text
-imageUrl — short text
-cardSet — short text (A or B)
-priceLoggedOut — decimal number
-priceLoggedIn — decimal number
-description — short text (short description to be shown on a card)
-attributes — JSON object
+title: short text
+slug: short text
+author: short text
+category: short text
+imageUrl: short text
+cardSet: short text (A or B)
+priceLoggedOut: decimal number
+priceLoggedIn: decimal number
+description: short text (short description to be shown on a card)
+attributes: JSON object
 
 *Example attributes value*:
 
@@ -83,12 +83,12 @@ Content type: displayMapping
 
 *Fields*:
 
-label — short text
-key — short text (price_first or specs_first)
-showPrice — boolean
-showSubtitle — boolean
-subtitleField — short text
-badgeKeys — JSON object
+label: short text
+key: short text (price_first or specs_first)
+showPrice: boolean
+showSubtitle: boolean
+subtitleField: short text
+badgeKeys: JSON object
 
 *Example displayMapping entries*:
 
