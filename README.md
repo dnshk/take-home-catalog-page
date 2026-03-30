@@ -3,6 +3,7 @@
 A responsive catalog page built with Next.js, TypeScript, Chakra UI, and Contentful. The page supports CMS-driven display mappings, role-based catalog visibility, and server-side authentication-specific pricing.
 
 Deployment: https://dnshk-catalog.netlify.app/
+Repository: https://github.com/dnshk/take-home-catalog-page
 
 **Tech Stack**:
 - Next.js (App Router) for SSR and routing
