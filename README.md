@@ -130,10 +130,10 @@ These choices kept the implementation focused while still meeting the core funct
 Move from imageUrl to native Contentful media assets for image metadata, editor-friendly asset management, and better long-term scalability
 Add stronger validation for attributes, either through explicit modeling or a more structured attribute system
 Add pagination for larger catalogs
-Add tests for:
-audience-based filtering
-server-side price resolution
-display mapping rendering
+*Add tests for:*
+- audience-based filtering
+- server-side price resolution
+- display mapping rendering
 Add preview mode for unpublished CMS content
 Add richer accessibility polish and keyboard/focus-state refinements
 Add structured data for the catalog page
