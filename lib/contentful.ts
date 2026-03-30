@@ -1,7 +1,14 @@
+import "server-only";
 import * as contentful from "contentful";
 import type { DisplayMapping, DisplayMappingKey, Item, SubtitleField } from "@/types/catalog";
 import type { EntryFieldTypes, EntrySkeletonType } from "contentful";
 import { toCardSet, toAttributes } from "./catalog.utils";
+
+const client = contentful.createClient({
+  space: process.env.CONTENTFUL_SPACE_ID!,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
+  environment: process.env.CONTENTFUL_ENVIRONMENT!,
+});
 
 type ItemSkeleton = EntrySkeletonType<
   {
@@ -30,12 +37,6 @@ type DisplayMappingSkeleton = EntrySkeletonType<
   },
   "displayMapping"
 >;
-
-const client = contentful.createClient({
-  space: process.env.CONTENTFUL_SPACE_ID!,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
-  environment: process.env.CONTENTFUL_ENVIRONMENT!,
-});
 
 export const getItemData: () => Promise<Item[]> = async () => {
   const response = await client.getEntries<ItemSkeleton>({
