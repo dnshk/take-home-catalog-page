@@ -49,11 +49,11 @@ export default function CatalogCard({ item, mapping, priority }: Props) {
 
         {subtitle && (
           <Text
-            fontSize={isPriceFirst ? "xl" : "sm"}
-            fontWeight={isPriceFirst ? "bold" : "normal"}
-            color={isPriceFirst ? "black" : "gray.500"}
+            fontSize={"sm"}
+            fontWeight={"normal"}
+            color={"gray.500"}
           >
-            {subtitle}
+            by {subtitle}
           </Text>
         )}
 

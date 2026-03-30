@@ -170,8 +170,8 @@ export default function CatalogClient({
         gap={6}
         templateColumns={{
           base: "1fr",
-          md: "repeat(auto-fit, minmax(320px, 1fr))",
-          xl: "repeat(auto-fit, minmax(420px, 1fr))",
+          md: "repeat(auto-fill, minmax(320px, 1fr))",
+          xl: "repeat(auto-fill, minmax(350px, 1fr))",
         }}
       >
         {filteredItems.map((item, index) => (
