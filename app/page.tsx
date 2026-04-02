@@ -1,5 +1,5 @@
 import { cookies } from "next/headers";
-import { getCatalogData, getItemData } from "@/lib/contentful";
+import { getCatalogData } from "@/lib/contentful";
 import {
   filterProductsForAuth,
   toCatalogItems,
